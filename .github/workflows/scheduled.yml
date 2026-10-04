@@ -41,7 +41,7 @@ jobs:
         env:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
-          token: "${{ secrets.TG_TOKEN }}"
-          chat_id: "${{ secrets.TG_ID }}"
+          TG_TOKEN: "${{ secrets.TG_TOKEN }}"
+          TG_ID: "${{ secrets.TG_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
         run: python main.py
