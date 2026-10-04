@@ -21,6 +21,9 @@ def rain_message():
     }
     # requests.get(url, params=payload)
     tg_response = requests.post(url, data=payload)
+    print(f"Is token found?: {tg_token is not None}")
+    print(f"Is chat_id found?: {tg_chat_id is not None}")
+    print(f"Chat ID Value: {tg_chat_id}") 
     return tg_response.json()
 
 
@@ -36,6 +39,9 @@ def wont_rain_message():
     }
     # requests.get(url, params=payload)
     tg_response = requests.post(url, data=payload)
+    print(f"Is token found?: {tg_token is not None}")
+    print(f"Is chat_id found?: {tg_chat_id is not None}")
+    print(f"Chat ID Value: {tg_chat_id}") 
     return tg_response.json()
 
 
